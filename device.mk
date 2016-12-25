@@ -21,7 +21,9 @@ $(call inherit-product-if-exists, vendor/lge/h811/h811-vendor.mk)
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/audio_platform_info.xml:system/etc/audio_platform_info.xml
+    $(LOCAL_PATH)/audio/audio_platform_info.xml:system/etc/audio_platform_info.xml \
+    $(LOCAL_PATH)/sounds/creek.mp3:system/media/audio/alarms/creek.mp3 \
+    $(LOCAL_PATH)/sounds/Iphone_Tritone.m4a:system/media/audio/notifications/Iphone_Tritone.m4a
 
 # Gps
 PRODUCT_COPY_FILES += \
